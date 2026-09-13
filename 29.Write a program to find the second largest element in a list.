@@ -1,0 +1,8 @@
+void main() {
+  List<int> numbers = [10, 40, 20, 50, 30];
+
+  numbers = numbers.toSet().toList();
+  numbers.sort();
+
+  print("Second largest element = ${numbers[numbers.length - 2]}");
+}
