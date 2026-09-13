@@ -1,0 +1,14 @@
+import 'dart:io';
+
+void main() {
+  List<int> numbers = [10, 20, 30, 40, 50];
+
+  print("Enter the element to search:");
+  int search = int.parse(stdin.readLineSync()!);
+
+  if (numbers.contains(search)) {
+    print("$search is present in the list.");
+  } else {
+    print("$search is not present in the list.");
+  }
+}
