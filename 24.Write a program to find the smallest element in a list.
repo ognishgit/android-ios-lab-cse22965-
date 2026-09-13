@@ -1,0 +1,13 @@
+void main() {
+  List<int> numbers = [10, 25, 5, 40, 15];
+
+  int smallest = numbers[0];
+
+  for (int num in numbers) {
+    if (num < smallest) {
+      smallest = num;
+    }
+  }
+
+  print("Smallest element = $smallest");
+}
